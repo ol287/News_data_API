@@ -33,4 +33,12 @@ except requests.exceptions.RequestException as e:
 # Display the DataFrame
 print(df.head())
 
-print(df.columns)
+# Specify the columns to keep
+columns_to_keep = ["article_id", "title","link","image_url","source_url"]
+
+# Create a new DataFrame with only the desired columns
+filtered_df = df[columns_to_keep]
+
+# Display the filtered DataFrame
+print(filtered_df)
+
