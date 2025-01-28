@@ -28,6 +28,9 @@ except requests.exceptions.RequestException as e:
     print(f"An error occurred: {e}")
     df = pd.DataFrame()
 
+
+
 # Display the DataFrame
 print(df.head())
 
+print(df.columns)
